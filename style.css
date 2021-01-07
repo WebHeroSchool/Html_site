@@ -1,7 +1,7 @@
 
 .menu,
-.section__block_center
+.section__block_position_center
 .section__button { font-family: 'Roboto', sans-serif; }
 
 .main__link,
-.section__block_top { font-family: 'PT Serif', serif; }
+.section__block_position_top { font-family: 'PT Serif', serif; }
