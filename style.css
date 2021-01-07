@@ -1,6 +1,6 @@
-header,
-.section__block_center,
-button { font-family: 'Roboto', sans-serif; }
+.menu,
+button,
+.section__block_center { font-family: 'Roboto', sans-serif; }
 
-p,
-.header__link_left { font-family: 'PT Serif', serif; }
+.main__link,
+.section__block_top { font-family: 'PT Serif', serif; }
