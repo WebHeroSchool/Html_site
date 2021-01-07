@@ -1,6 +1,7 @@
+
 .menu,
-button,
-.section__block_center { font-family: 'Roboto', sans-serif; }
+.section__block_center
+.section__button { font-family: 'Roboto', sans-serif; }
 
 .main__link,
 .section__block_top { font-family: 'PT Serif', serif; }
