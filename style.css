@@ -1,5 +1,3 @@
-* { border: 1px dashed red; }
-
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -40,12 +38,14 @@ body {
 .header {
   align-items: center;
   display: flex;
-  min-height: 89px;
   justify-content: space-between;
+  margin-bottom: 150px;
+  min-height: 89px;
 
 }
 
-.main {
+.main,
+.carousel {
   display: flex;
   justify-content: center;
   min-width: 15%;
@@ -55,4 +55,17 @@ body {
   display: flex;
   justify-content: space-between;
   min-width: 24.5%;
+}
+
+.section {
+  display: flex;
+  height: 370px;
+  margin-bottom: 60px;
+}
+
+.section__wrap_position_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
 }
