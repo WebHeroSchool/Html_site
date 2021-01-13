@@ -61,6 +61,8 @@ button {
   min-height: 89px;
 }
 
+.header__main { padding-bottom: 3px; }
+
 .main,
 .carousel {
   display: flex;
@@ -79,6 +81,7 @@ button {
 }
 
 .menu__link {
+  font-size: 18px;
   margin-right: 26px;
   position: relative;
 }
@@ -95,9 +98,7 @@ button {
   width: 100%;
 }
 
-.menu__link:hover {
-  opacity: .5;
-}
+.menu__link:hover { opacity: .5; }
 
 .menu__link:hover::after, .menu__link_active::after { opacity: 1; }
 
@@ -114,4 +115,8 @@ button {
   flex-direction: column;
   justify-content: space-between;
   width: 35%;
+}
+
+* {
+  border: 1px dashed red;
 }
