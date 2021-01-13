@@ -14,7 +14,11 @@ h1 {
   margin: 0.67em 0;
 }
 
-a { background-color: transparent; }
+a {
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+}
 
 img { border-style: none; }
 
@@ -70,10 +74,34 @@ button {
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
   min-width: 24.5%;
+  position: relative;
 }
+
+.menu__link {
+  margin-right: 26px;
+  position: relative;
+}
+
+.menu__link::after {
+  background-color: #0056ec;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity .5s;
+  width: 100%;
+}
+
+.menu__link:hover {
+  opacity: .5;
+}
+
+.menu__link:hover::after, .menu__link_active::after { opacity: 1; }
+
+.menu__link:last-child { margin-right: 0; }
 
 .section {
   display: flex;
