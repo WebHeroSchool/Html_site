@@ -6,12 +6,13 @@ html {
 body {
   margin: 0 auto;
   min-height: 100vh;
-  width: 81.7%;
+  width: 79.8%;
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  line-height: 1.29;
+  font-size: 3.5vw;
+  margin-bottom: 39px;
 }
 
 a {
@@ -20,30 +21,23 @@ a {
   text-decoration: none;
 }
 
+b { background-color: #ecf3ff; }
+
 img { border-style: none; }
 
-.header__wrap { position: relative; }
-
-.header__wrap::after {
-  background-color: #c8dbfb;
-  border-radius: 15px;
-  content: "";
-  display: block;
-  height: 28px;
-  left: 9px;
-  opacity: .7;
-  position: absolute;
-  top: 6px;
-  width: 28px;
-}
-
 button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 100%;
+  background-color: #0056ec;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  height: 56px;
   line-height: 1.15;
   margin: 0;
+  min-width: 273px;
   overflow: visible;
   text-transform: none;
+  width: 273px;
 }
 
 .menu,
@@ -57,32 +51,49 @@ button {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
-  min-height: 89px;
+  min-height: 110px;
 }
 
-.header__main { padding-bottom: 3px; }
+.header__wrap { position: relative; }
 
-.main,
-.carousel {
+.header__wrap::after {
+  background-color: #c8dbfb;
+  border-radius: 15px;
+  content: "";
+  display: block;
+  height: 28px;
+  left: 9px;
+  opacity: .7;
+  position: absolute;
+  top: 10px;
+  width: 28px;
+}
+
+.header__img {
+  position: relative;
+  top: 3px;
+}
+
+.main {
   display: flex;
-  justify-content: center;
-  min-width: 15%;
+  margin-right: auto;
+  min-width: 12%;
 }
 
 .main__link {
   font-size: 24px;
-  padding: 5px 0 0 16px;
+  padding: 5px 0 4px 18px;
 }
 
 .menu {
-  min-width: 24.5%;
+  min-width: 385px;
+  padding-top: 6px;
   position: relative;
 }
 
 .menu__link {
   font-size: 18px;
-  margin-right: 26px;
+  margin-right: 23px;
   position: relative;
 }
 
@@ -105,18 +116,34 @@ button {
 .menu__link:last-child { margin-right: 0; }
 
 .section {
-  display: flex;
-  height: 370px;
+  background: url('./logo_section.svg') no-repeat right 132px;
+  background-size: 51% 83%;
+  height: 33.3vw;
   margin-bottom: 60px;
+  padding-top: 150px;
 }
 
-.section__wrap_position_left {
+.section__wrap {
+  margin-bottom: 14vw;
+  width: 521px;
+}
+
+.section__block_position_center {
+  font-size: 1.14vw;
+  margin-bottom: 43px;
+  margin-top: 0;
+  width: 22vw;
+}
+
+.carousel {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35%;
+  justify-content: center;
 }
 
-* {
-  border: 1px dashed red;
+.carousel__button {
+  background-color: #c8dbfb;
+  border-radius: 5px;
+  height: 8px;
+  margin-right: 3px;
+  width: 8px;
 }
