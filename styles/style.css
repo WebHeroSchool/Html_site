@@ -85,7 +85,7 @@ button {
 }
 
 .menu {
-  min-width: 385px;
+  min-width: 20vw;
   padding-top: 6px;
   position: relative;
 }
