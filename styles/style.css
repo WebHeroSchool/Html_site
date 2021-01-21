@@ -10,9 +10,9 @@ body {
 }
 
 h1 {
-  line-height: 1.29;
-  font-size: 3.5vw;
-  margin-bottom: 39px;
+  line-height: 1.32;
+  font-size: 3.45vw;
+  margin-bottom: 36px;
 }
 
 a {
@@ -50,6 +50,7 @@ button {
   align-items: center;
   display: flex;
   min-height: 110px;
+  width: 99.5%;
 }
 
 .header__wrap { position: relative; }
@@ -89,7 +90,7 @@ button {
 }
 
 .menu__link {
-  font-size: .93vw;
+  font-size: .94vw;
   margin-right: 23px;
   position: relative;
 }
@@ -115,8 +116,8 @@ button {
 .burger { display: none; }
 
 .section {
-  background: url('../images/logo_section.svg') no-repeat right 85px;
-  background-size: 50.5% 79%;
+  background: url('../images/logo_section.svg') no-repeat 39.6vw 86px;
+  background-size: 50.1% 76.4%;
   height: 43.3vw;
   padding-top: 150px;
 }
@@ -151,7 +152,11 @@ button {
 @media(max-width: 1367px) {
   body { width: 68.1%; }
 
-  .menu__link { margin-right: 28px; }
+  .header { width: auto; }
+  .menu__link {
+    font-size: 1.02vw;
+    margin-right: 23px;
+  }
 
   .menu__link:last-child { margin-right: 5px; }
 
@@ -167,6 +172,7 @@ button {
   }
 
   .section__block_position_top {
+    font-size: 3.5vw;
     letter-spacing: 1.2px;
     line-height: 1.35;
     margin-bottom: 44px;
@@ -214,7 +220,7 @@ button {
   }
 
   .section__button {
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     height: 4.2vw;
     width: 20.6vw;
   }
@@ -261,24 +267,30 @@ button {
 }
 
 @media(max-width: 376px) {
-  body { width: 44.3%; }
+  body { width: 90%; }
 
   .header {
-    align-items: flex-end;
-    min-height: 29px;
+    min-height: 84px;
   }
 
-  .main { min-width: auto; }
 
   .header__wrap {
-    bottom: 3px;
-    left: 1px;
+    bottom: 6px;
+    left: 5px;
   }
 
   .header__wrap::after {
-    left: 4px;
-    top: 8px;
+    left: 8px;
+    top: 11px;
   }
+
+  .header__img,
+  .header__wrap::after {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+
+  .header__img { top: 4px; }
 
   .main__link,
   .menu,
@@ -288,22 +300,21 @@ button {
   .burger__line { display: block; }
 
   .burger {
-    bottom: 2px;
     position: relative;
-    right: 1px;
+    right: 5px;
   }
 
   .burger__line {
     background-color: #0056ec;
-    margin-bottom: 2px;
-    height: 2px;
-    width: 3.2vw;
+    margin-bottom: 4px;
+    height: 3px;
+    width: 6.7vw;
   }
 
   .section {
-    background-size: 84% 52%;
+    background-size: 83% 42%;
     background-position: center top;
-    height: 76vw;
+    height: 155vw;
     padding-top: 0;
   }
 
@@ -311,30 +322,34 @@ button {
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: inherit;
     margin: 0 auto;
-    width: 71%;
+    width: auto;
   }
 
   .section__block_position_top {
+    font-size: 8vw;
     letter-spacing: 0;
-    margin-bottom: 4.5vw;
-    padding-top: 35.2vw;
+    line-height: 1.33;
+    padding: 63.5vw 0 0 5px;
+    margin-bottom: 9vw;
     text-align: center;
   }
 
   .section__block_position_center {
-    font-size: 2vw;
-    margin: 0 auto 3.6vw;
+    font-size: 4.3vw;
+    margin: 0 auto 6.6vw;
     line-height: 1.2;
     letter-spacing: .2px;
+    padding-left: 7px;
     text-align: center;
-    width: auto;
+    width: 73%;
   }
 
   .section__button {
     border-radius: 1px;
-    font-size: 2vw;
-    height: 5.7vw;
-    width: 28vw;
+    font-size: 3.8vw;
+    height: 11.7vw;
+    width: 56vw;
   }
 }
