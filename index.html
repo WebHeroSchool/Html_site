@@ -2,30 +2,46 @@
 <html>
 <head>
   <meta charset = 'UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Structure</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel = 'stylesheet' href = './styles/style.css'>
 </head>
 <body>
-  <header>
-    <div>
-      <img>
-      <a>app.creation</a>
+  <input type = 'checkbox' id = 'checkbox'/>
+  <header class = 'header'>
+    <div class = 'header__main main'>
+      <div class = 'header__wrap'>
+        <img class = 'header__img'src = './images/Ellipse.svg' alt = 'logo'>
+      </div>
+      <a class = 'main__link' href = '#'>app.creation</a>
     </div>
-    <div>
-      <a>start</a>
-      <a>services</a>
-      <a>about</a>
-      <a>blog</a>
-      <a>contact us</a>
+    <label for = 'checkbox' class = 'header__label'>
+      <div class = 'header__burger burger'>
+        <span class = 'burger__line'></span>
+        <span class = 'burger__line'></span>
+        <span class = 'burger__line'></span>
+      </div>
+    </label>
+    <div class = 'header__menu menu'>
+      <a class = 'menu__link' href = '#'>start</a>
+      <a class = 'menu__link menu__link_active' href = '#'>services</a>
+      <a class = 'menu__link' href = '#'>about</a>
+      <a class = 'menu__link' href = '#'>blog</a>
+      <a class = 'menu__link' href = '#'>contact us</a>
     </div>
   </header>
-  <section>
-    <div>
-      <p>Building an App Without Design Expertise?</p>
-      <p>I help tech startups design better digital products without hiring a full-time designer</p>
-      <button>Schedule free consultation</button>
+  <section class = 'section'>
+    <div class = 'section__wrap'>
+      <h1 class = 'section__block section__block_position_top'>Building an App <b>Without Design Expertise?</b></h1>
+      <p class = 'section__block section__block_position_center'>I help tech startups design better digital products without hiring a&nbsp;full-time designer</p>
+      <button class = 'section__button'>Schedule free consultation</button>
     </div>
-    <div>
-      <img>
+    <div class = 'section__carousel carousel'>
+      <span class = 'carousel__button'></span>
+      <span class = 'carousel__button'></span>
+      <span class = 'carousel__button'></span>
     </div>
   </section>
 </body>
