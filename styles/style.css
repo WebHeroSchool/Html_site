@@ -113,6 +113,7 @@ button {
 
 .menu__link:last-child { margin-right: 0; }
 
+#checkbox,
 .burger { display: none; }
 
 .section {
@@ -153,6 +154,7 @@ button {
   body { width: 68.1%; }
 
   .header { width: auto; }
+  
   .menu__link {
     font-size: 1.02vw;
     margin-right: 23px;
@@ -238,9 +240,7 @@ button {
     padding: 7px 0 0px 2.6vw;
   }
 
-  .menu {
-    padding-top: 8px;
-  }
+  .menu { padding-top: 8px; }
 
   .menu__link {
     font-size: 2vw;
@@ -269,10 +269,7 @@ button {
 @media(max-width: 376px) {
   body { width: 90%; }
 
-  .header {
-    min-height: 84px;
-  }
-
+  .header { min-height: 84px; }
 
   .header__wrap {
     bottom: 6px;
@@ -352,4 +349,46 @@ button {
     height: 11.7vw;
     width: 56vw;
   }
+
+  #checkbox:checked ~ .header .burger .burger__line:last-child,
+  #checkbox:checked ~ .header .menu .menu__link::after,
+  #checkbox:checked ~ .header .main,
+  #checkbox:checked ~ .section { display: none; }
+
+  #checkbox:checked ~ .header {
+    flex-direction: column;
+    height: 666px;
+  }
+
+  #checkbox:checked ~ .header .menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 274px;
+    padding-top: 172px;
+    width: 155px;
+  }
+
+  #checkbox:checked ~ .header .menu .menu__link {
+    font-size: 8vw;
+    margin-right: 0vw;
+  }
+
+  #checkbox:checked ~ .header .menu .menu__link:nth-child(3),
+  #checkbox:checked ~ .header .menu .menu__link:nth-child(4),
+  #checkbox:checked ~ .header .menu .menu__link:nth-child(5) { right: 2px; }
+
+  #checkbox:checked ~ .header .burger {
+    left: 151px;
+    top: 32px;
+  }
+
+  #checkbox:checked ~ .header .burger .burger__line:first-child {
+    position: relative;
+    top: 7px;
+    transform: rotate(45deg);
+  }
+
+  #checkbox:checked ~ .header .burger .burger__line:nth-child(2) { transform: rotate(-45deg); }
 }
