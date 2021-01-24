@@ -170,7 +170,13 @@ button:hover {
   width: 8px;
 }
 
-.carousel__button:hover { cursor: pointer; }
+.carousel__button:hover {
+  bottom: 2px;
+  cursor: pointer;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
 
 @media(max-width: 1367px) {
   body { width: 68.1%; }
